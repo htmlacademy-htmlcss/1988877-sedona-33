@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page-body {
+    font-family: "PT Sans";
+    font-size: 24px;
+    line-height: 28px;
+    background:#242424;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.hotels-page {
+  font-family: "PT Sans";
+  font-size: 24px;
+  line-height: 28px;
+  background: #ffffff;
+  color: #242424;
+}
+
+.main-index {
+  text-align: center;
+}
+
+.page-header {
+  color: #242424;
+  background:#ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 485px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.sedona-better {
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+  background-image: url("../images/Welcome.svg");
+  background-repeat: no-repeat;
+  width: 458px;
+  height: 352px;
+}
+
+.advantages-item {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotel-search-interested, .hotel-search-offers {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.options {
+  background-image: url("../images/catalog-background-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.sedona-hotels {
+  background-color: #ffffff;
+  color: #000000;
+} 
+
+.places-list {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.subscription-proposal-index {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/backgroundindex-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscription-proposal-hotels {
+  text-align: center;
+}
+
+.page-footer-index {
+  color: #000000;
+  background-color:#ffffff
+}
+
+.page-footer-hotels {
+  color: #000000;
+  background-color: #ffffff;
+}
