@@ -18,7 +18,7 @@
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: ;
 }
 
 html {
@@ -28,7 +28,7 @@ html {
 .visually-hidden {
   display: none;
 }
-
+11111
 .page-body,
 .hotels-page {
     min-height: 100%;
