@@ -14,6 +14,13 @@
     font-display: swap;
 }
 
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   height: 100%;
 }
@@ -37,6 +44,10 @@ html {
 
 .hotels-page {
   text-align: initial;
+}
+
+.sedona-1 {
+  display: block;
 }
 
 .page-container {
@@ -147,8 +158,6 @@ p {
   margin: 0;
   height: 282px;
 }
-
-
 
 .advantages-general {
   display: flex;
