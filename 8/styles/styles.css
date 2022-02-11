@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page-body,
+.hotels-page {
+    min-height: 100%;
+    font-family: "PT Sans";
+    font-size: 24px;
+    line-height: 28px;
+    background:#242424;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.hotels-page {
+  text-align: initial;
+}
+
+.sedona-1 {
+  display: block;
+}
+
+.page-container {
+  margin: 0 auto;
+}
+
+.sedona-logo-link {
+  margin-left: 70px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  color: #242424;
+  background:#ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+}
+
+.navigation-list {
+  display: flex; 
+}
+
+.navigation-user {
+  display: flex;
+  margin-left: 100px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  list-style-type: none;
+}
+
+.navigation-element {
+  margin-left: 30px;
+}
+
+.navigation-user-element {
+  margin-left: 30px;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.svg-sedona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  height: 485px;
+}
+
+.sedona-description {
+  padding-top: 63px;
+  padding-bottom: 31px;
+  margin: 0;
+}
+
+.sedona-description-small {
+  padding-bottom: 80px;
+}
+ 
+
+.why-sedona {
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  height: 282px;
+}
+
+.advantages-general {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  color: #000000;
+  background-color: #83B3D3;
+  padding-top: 97px;
+  margin: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-item:nth-child(4) {
+  background-color: #ffffff;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(7) {
+  color:#ffffff;
+}
+
+
+.button-interested {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 575px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #756257;
+}
+
+.interested {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.hotel-search-proposal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  height: 417px; 
+}
+
+.options {
+  background-image: url("../images/catalog-background-1.jpg");
+  background-repeat: no-repeat;
+  height: 411px;
+}
+
+.sedona-hotels {
+  background-color: #ffffff;
+  color: #000000;
+} 
+
+.places-list {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  background-image: url("../images/backgroundindex-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 417px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer-index {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  background-color:#ffffff;
+  margin: 0;
+}
+
+.page-footer-hotels {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-socials-list {
+  display: flex;
+}
