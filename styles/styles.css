@@ -35,7 +35,7 @@ html {
 }
 
 .page-body,
-.hotels-page {
+.hotels-body {
     min-height: 100%;
     font-family: "PT Sans";
     font-size: 24px;
@@ -59,13 +59,6 @@ html {
   margin: 0 auto;
 }
 
-.navigation-logo {
-  font-size: 0;
-  display: block;
-  line-height: 1;
-  z-index: 1;
-}
-
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -74,6 +67,13 @@ html {
   padding: 0 70px;
 }
 
+
+.navigation-logo {
+  font-size: 0;
+  display: block;
+  line-height: 1;
+  z-index: 1;
+}
 
 .navigation {
   display: flex;
@@ -133,17 +133,6 @@ li {
   text-decoration: none;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  background-color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 
 .svg-sedona {
   display: flex;
@@ -155,8 +144,17 @@ h1 {
 }
 
 .sedona-description {
-  padding-bottom: 31px;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-align: center;
   margin: 0;
+  padding: 0;
+  padding-bottom: 31px;
+  
 }
 
 .sedona-description-small {
@@ -252,7 +250,75 @@ h1 {
 .options {
   background-image: url("../images/catalog-background-1.jpg");
   background-repeat: no-repeat;
-  height: 411px;
+  height: 408px;
+}
+
+.options-action {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.options-item-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.options-item-2 {
+  margin: 0;
+  margin-left: 67px;
+  padding: 0;
+
+}
+
+.options-item-field {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.options-item-cost {
+  display: flex;
+  margin: 0;
+  padding-top: 34px;
+  margin-left: 216px;
+}
+
+
+
+.options-place {
+  margin: 0;
+  padding: 0;
+  padding-top: 71px;
+  padding-bottom: 31px;
+  font-weight: 700;
+}
+
+.options-infrastructure {
+  margin: 0;
+  margin-left: 71px;
+  padding-top: 71px;
+  padding-bottom: 31px;
+  font-weight: 700;
+}
+
+.options-item-checkbox {
+  padding: 0;
+  margin: 0;
+  margin-left: 76px;
+  padding-top: 13px;
+}
+
+.options-item-radio {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
 }
 
 .email-subscription {
@@ -278,17 +344,30 @@ h1 {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  
+}
+
+.button-apply {
+  text-transform: uppercase;
 }
 
 .sedona-hotels {
-  background-color: #ffffff;
-  color: #000000;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-left: 71px;
+  display: flex;
+  justify-content: flex-start;
 } 
 
 .places-list {
   background-color: #ffffff;
   color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-section {
@@ -304,7 +383,8 @@ h1 {
   align-items: center;
 }
 
-.page-footer-index {
+.page-footer-index,
+.page-footer-hotels {
   display: flex;
   justify-content: space-between;
   align-items: center;

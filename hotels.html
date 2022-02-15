@@ -7,90 +7,123 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/normalize.css">
 </head>
-<body class="hotels-page">
+<body class="hotels-body">
 	<div class="body-container">
 	<header class="page-header">
 		<nav class="navigation">
-			<section>
-				<a class="sedona-logo-link" href="index.html">
-				<img class="sedona-logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона">
-				</a>
-		    </section>
-		  	<ul class="navigation-list">
-				<li class="navigation-element">
-			 	 <a class="navigation-link" href="index.html">Главная</a></li>
-				<li class="navigation-element">
-			  	 <a class="navigation-link" href="#">О Седоне</a></li>
-				<li class="navigation-element">
-			  	 <a class="navigation-link" href="hotels.html">Гостиницы</a></li>
-		  	</ul>
-		
-		  	<ul class="navigation-user">
-				<li class="navigation-user-element">
-			  	 <a class="navigation-user-link" href="#">Поиск</a></li>
-				<li class="navigation-user-element">
-			  	 <a class="navigation-user-link" href="#">Избранное</a></li>
-				<li class="navigation-user-element">
-			  	 <a class="navigation-user-link" href="#">Хочу сюда!</a></li>
-		  	</ul>
+			<a class="navigation-logo" href="index.html">
+			  <img 
+				src="images/logo.svg" 
+				width="139" 
+				height="70" 
+				alt="Логотип города Седона"
+			  >
+			</a>
+			<ul class="navigation-list">
+			  <li class="navigation-element">
+				<a class="navigation-link" href="index.html">Главная</a>
+			  </li>
+			  <li class="navigation-element">
+				<a class="navigation-link" href="#">О Седоне</a>
+			  </li>
+			  <li class="navigation-element">
+				<a class="navigation-link" href="hotels.html">Гостиницы</a>
+			  </li>
+			</ul>
+			<ul class="navigation-user">
+			  <li class="navigation-user-element">
+				<a class="navigation-user-link" href="#">Поиск</a></li>
+			  <li class="navigation-user-element">
+				<a class="navigation-user-link" href="#">Избранное</a></li>
+			  <li class="navigation-user-element">
+				<a class="navigation-user-link" href="#">Хочу сюда!</a></li>
+			</ul>
 		</nav>
 	</header>
  	<main class="main-hotels">
-  		<section class="options">
-			<form action="https://echo.htmlacademy.ru/courses" method="post">
-  				<h1 class="sedona-hotels">Гостиницы Седоны</h1>
-  				<p class="hotels-details">Инфраструктура</p> 
-				<ul class="options-item">
-	    			<li>
+  		<div class="options">
+			<span class="sedona-hotels">Гостиницы Седоны</span>
+			<form class="options-action" action="https://echo.htmlacademy.ru/courses" method="post">
+  				
+				<ul class="options-item-1">
+					<p class="options-infrastructure">Инфраструктура:</p> 
+	    			<li class="options-item-checkbox">
+						
 	 					<label for="infrastructure-field">Бассейн</label>
 	   					<input type="checkbox" name="pool" id="infrastructure-field" checked>
 	   				</li>
-	    			<li>
+					   <li class="options-item-checkbox">
 			 			<label for="infrastructure-field">Парковка</label>
 			 			<input type="checkbox" name="parking" id="infrastructure-field" checked>
 	  				</li>
-	   				<li>
+					  <li class="options-item-checkbox">
 	   	 	  			<label for="infrastructure-field">Wi-Fi</label>
 	  	 	  			<input type="checkbox" name="Wi-Fi" id="infrastructure-field">
 	  		   		</li>
-	 			</ul>
-				<p class="staying-place">Тип жилья</p>
-	 		   			<label>
-	  		   			<input type="radio" name="staying-place-type" value="hotel" checked>Гостиница
-	   		   			</label><br>
-	   		   			<label>
-	  		   			<input type="radio" name="staying-place-type" value="motel">Мотель
-	   		   			</label><br>
-	   		   			<label>
-	  		   			<input type="radio" name="staying-place-type" value="appartaments">Аппартаменты
-	   		  			</label>
-
-	    		<p class="visually-hidden">Цены</p>
-	    				<label for="price-range">Стоимость,р:</label>
-	    				<input type="text" name="from">
-	    				<input type="text" name="to">
+					</ul>
+					
+					<ul class="options-item-2">
+						<p class="options-place">Тип жилья:</p>
+						<li class="options-item-radio">
+					
+	 		   			<label for="staying-place-type"></label>
+	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="hotel" checked>Гостиница
+	   		   			<br>
+					</li>
+					<li class="options-item-radio">
+	   		   			<label for="staying-place-type"></label>
+	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="motel">Мотель
+	   		   			<br>
+					</li>
+					<li class="options-item-radio">
+	   		   			<label for="staying-place-type"></label>
+	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="appartaments">Аппартаменты
+	   		  			
+					</li>
+					</ul>	 	
+	    		<p class="prices visually-hidden">Цены</p>
+				<ul class="options-item-field">
+	    				<li class="options-item-cost"><label for="price-range">Стоимость,р:</label></li>
+	    				<li class="options-item-cost">
+						<input type="text" name="from" size="10">
+	    				<input type="text" name="to" size="10"></li>
+						<li class="options-item-cost">
 	  				   0<input type="range" name="price-range" id="price-range" min="0" max="10000" step="1">9000
+					</li>
+					<li class="options-item-cost">
 	    				<button class="button button-apply" type="submit" href="#">Применить</button>
 	    				<button class="button button-reset" type="reset" href="#">Сбросить</button>
+					</li>
+				</ul>
 			</form>
-   		</section>
+		</div>
 
     <h2 class="visually-hidden">Список найденных гостиниц</h2>
 	<section class="staying-place-list">
 		<span class="places-found">Найдено гостиниц: 38</span>
 	  	<ul class="places-list">
-			<img class="amara-photo" src="images/bg-amara-hotel.jpg" width="299" height="206" alt="amara hotel">
 			<li class="places-list-item">Amara Resort & Spa
+			<img 
+			class="amara-photo" 
+			src="images/bg-amara-hotel.jpg" 
+			width="299"
+			height="206"
+			alt="amara hotel">
 		 		<span class="small-text-hotel">Гостиница</span>
 		 		<span class="small-text-price">От 4000р</span>
 		 		<img class="stars" src="" alt="Количество звёзд">
-				 <a class="expand-item-list" href="#">Подробнее</a>
+				 	<a class="expand-item-list" href="#">Подробнее</a>
 		 		<span class="rating">Рейтинг: 8,5</span>
 				<button class="in-favourites" href="#">В избранное</button>
 			</li>
-		
-			<img class="desert-quail-photo" src="images/bg-desert-inn.jpg" width="299" height="206" alt="desert quial inn">
+			
 			<li class="places-list-item">Desert Quail Inn
+			<img 
+			class="desert-quail-photo"
+			src="images/bg-desert-inn.jpg"
+			width="299"
+			height="206" 
+			alt="desert quial inn">
 		 		<span class="small-text-hotel">Гостиница</span>
 				<span class="small-text-price">От 2000р</span>
 				<img class="stars" src="" alt="Количество звёзд">
@@ -99,8 +132,13 @@
 		 		<button class="in-favourites" href="#">В избранное</button>
 			</li>
 		
-			<img class="poco-diablo-photo" src="images/bg-pocodiablo.jpg" width="299" height="206" alt="villas at poco diablo">
 			<li class="places-list-item">Villas at Poco Diablo
+			<img 
+			class="poco-diablo-photo" 
+			src="images/bg-pocodiablo.jpg" 
+			width="299" 
+			height="206" 
+			alt="villas at poco diablo">
 				<span class="small-text-hotel">Гостиница</span>
 				<span class="small-text-price">От 3000р</span>
 		 		<img class="stars" src="" alt="Количество звёзд">
@@ -108,9 +146,13 @@
 				<span class="rating">Рейтинг: 9,2</span>
 				<button class="in-favourites" href="#">В избранное</button>
 			</li>
-	
-			<img class="green-tree-photo" src="images/bg-greentreeinn.jpg" width="299" height="206" alt="GreenTree Inn">
+			
 			<li class="places-list-item">GreenTree Inn
+			<img class="green-tree-photo" 
+			src="images/bg-greentreeinn.jpg" 
+			width="299" 
+			height="206" 
+			alt="GreenTree Inn">
 		 		<span class="small-text-hotel">Гостиница</span>
 		 		<span class="small-text-price">От 4000р</span>
 		 		<img class="stars" src="" alt="Количество звёзд">
@@ -150,18 +192,17 @@
 		</li>				
 	   </ul>
 
-	<section class="subscription-proposal-hotels">
-      <h2 class="subscribe">Подпишитесь на рассылку</h2>
-       <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-       <form class="email-subscription" action="https://google.com" method="post">
-        <label for="subscription-email"></label> 
-        <input class="subscription-field" placeholder="E-mail" type="email" name="subscribtion-email" id="subscribtion-email" required>
-         <button class="button button-subscribe" type="submit">Подписаться
-         </button>
-        </form>
-    </section>
+	   <section class="subscribe-section">
+		<h2 class="subscribe">Подпишитесь на рассылку</h2>
+		<p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+		<form class="email-subscription" action="https://google.com" method="post">
+		  <label for="subscription-email"></label> 
+		  <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscribtion-email" id="subscribtion-email" required>
+		  <a class="button-subscribe" type="submit" href="#">Подписаться</a>
+		</form>
+	  </section>
 	
-   <footer class="page-footer-index">
+   <footer class="page-footer-hotels">
     <ul class="footer-socials-list">
        <li class="footer-socials footer-socials-twitter">
          <a class="visualy-hidden" href="https://twitter.com" target="_blank" alt="Твиттер">Twitter</a>
@@ -176,9 +217,14 @@
     <div class="company-tel"><a href="tel:+78128121212">+7(812)812-12-12</a>
     </div>
     <div class="html-academy">
-		<a href="https://htmlacademy.ru" target="_blank"></a>
-      		<img src="images/logo_htmlacademy.png" width="115" height="34" alt="html-академия">
-      </a>
+		<a class="html-academy-logo" href="https://htmlacademy.ru" target="_blank">
+			<img 
+			src="images/logo_htmlacademy.png"
+			width="155"
+			height="34"
+			alt="html-академия"
+			>
+		</a>
     </div>
    </footer>
   </main>
