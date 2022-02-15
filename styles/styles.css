@@ -50,7 +50,8 @@ html {
   text-align: initial;
 }
 
-.sedona-1 {
+.sedona-1,
+.sedona-2 {
   display: block;
 }
 
@@ -58,8 +59,11 @@ html {
   margin: 0 auto;
 }
 
-.sedona-logo-link {
-  margin-left: 70px;
+.navigation-logo {
+  font-size: 0;
+  display: block;
+  line-height: 1;
+  z-index: 1;
 }
 
 .page-header {
@@ -74,31 +78,40 @@ html {
 .navigation {
   display: flex;
   width: 100%;
+  margin-bottom: -5px;
 }
+
 
 .navigation-list {
   display: flex; 
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .navigation-user {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-right: 23px;
+  width: 100%;
 }
 
 li {
   list-style-type: none;
-}
-
-a {
-  list-style-type: none;
+  padding: 0;
 }
 
 .navigation-element {
-  padding-left: 30px;
-  margin-left: 30px;
+    margin: 0 17px;
+    padding: 11px 0 20px 0;
+    border-bottom: 1px solid red;
 }
 
 .navigation-user-element {
-  margin-left: padding 20px 0;
   margin: 0 17px;
 }
 
@@ -170,6 +183,7 @@ h1 {
 
 .advantages-item {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   color: #000000;
@@ -211,7 +225,11 @@ h1 {
   width: 575px;
   height: 60px;
   border-radius: 10px;
+  font-weight: 700;
   background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .interested {
@@ -235,6 +253,32 @@ h1 {
   background-image: url("../images/catalog-background-1.jpg");
   background-repeat: no-repeat;
   height: 411px;
+}
+
+.email-subscription {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.subscription-field {
+  height: 60px;
+  width: 600px;
+}
+
+.button-subscribe {
+  display: flex;
+  font-weight: 700;
+  width: 200px;
+  height: 64px;
+  background-color: #83B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
 }
 
 .sedona-hotels {
@@ -262,13 +306,33 @@ h1 {
 
 .page-footer-index {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #000000;
   background-color:#ffffff;
   margin: 0;
+  height: 120px;
 }
-  
+
+.company-tel {
+  text-decoration: none;
+}
+
+.html-academy {
+  padding: 0;
+  margin: 0;
+}
+
+.html-academy-logo {
+  height: 34px;
+  margin-right: 72px;
+}
+
 .footer-socials-list {
   display: flex;
+}
+
+.footer-socials {
+  margin: 0;
+  padding-right: 30px;
 }
