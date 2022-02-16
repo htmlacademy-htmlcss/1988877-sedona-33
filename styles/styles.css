@@ -42,7 +42,6 @@ html {
     line-height: 28px;
     background:#E5E5E5;
     color: #FFFFFF;
-    text-align: center;
     margin: 0;
 }
 
@@ -247,79 +246,62 @@ li {
   height: 417px; 
 }
 
-.options {
-  background-image: url("../images/catalog-background-1.jpg");
-  background-repeat: no-repeat;
-  height: 408px;
-}
 
 .options-action {
   display: flex;
   flex-wrap: wrap;
+  background-image: url("../images/catalog-background-1.jpg");
+  background-repeat: no-repeat;
+  height: 408px;
   
 }
 
-.options-item-1 {
+.hotels-filter {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  
 }
 
-.options-item-2 {
-  margin: 0;
-  margin-left: 67px;
-  padding: 0;
-
-}
-
-.options-item-field {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+.filter-option {
+  margin-bottom: 30px;
   font-weight: 700;
 }
 
-.options-item-cost {
-  display: flex;
-  margin: 0;
-  padding-top: 34px;
-  margin-left: 216px;
-}
-
-
-
-.options-place {
-  margin: 0;
-  padding: 0;
-  padding-top: 71px;
-  padding-bottom: 31px;
-  font-weight: 700;
-}
-
+.options-staying-place,
 .options-infrastructure {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
   margin-left: 71px;
-  padding-top: 71px;
-  padding-bottom: 31px;
-  font-weight: 700;
+  margin-bottom: 83px;
+  width: 170px;
+  height: 115px;
 }
+
 
 .options-item-checkbox {
-  padding: 0;
-  margin: 0;
-  margin-left: 76px;
-  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .options-item-radio {
-  margin: 0;
-  padding: 0;
-  padding-top: 13px;
+  padding-bottom: 13px;
 }
+
+
+.options-item-cost-range {
+  display: flex;
+  flex-direction: column;
+  margin-left: 216px;
+  
+}
+
+.options-item-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 81px;
+  margin-top: 34px;
+}
+
 
 .email-subscription {
   display: flex;
@@ -348,6 +330,7 @@ li {
 
 .button-apply {
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .sedona-hotels {
@@ -359,15 +342,13 @@ li {
   padding: 0;
   padding-top: 35px;
   padding-left: 71px;
-  display: flex;
-  justify-content: flex-start;
+  display: block;
 } 
 
 .places-list {
   background-color: #ffffff;
   color: #000000;
   display: flex;
-  flex-direction: column;
 }
 
 .subscribe-section {

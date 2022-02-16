@@ -41,66 +41,61 @@
 		</nav>
 	</header>
  	<main class="main-hotels">
-  		<div class="options">
-			<span class="sedona-hotels">Гостиницы Седоны</span>
-			<form class="options-action" action="https://echo.htmlacademy.ru/courses" method="post">
-  				
-				<ul class="options-item-1">
-					<p class="options-infrastructure">Инфраструктура:</p> 
-	    			<li class="options-item-checkbox">
-						
+		
+		<form class="options-action" action="https://echo.htmlacademy.ru/courses" method="post">
+			<h1 class="sedona-hotels">Гостиницы Седоны</h1>
+		<div class="hotels-filter">
+			<div class="options-infrastructure">
+				<span class="filter-option">Инфраструктура:</span>
+				<div class="options-checkboxes">
+					<div class="options-item-checkbox">
 	 					<label for="infrastructure-field">Бассейн</label>
 	   					<input type="checkbox" name="pool" id="infrastructure-field" checked>
-	   				</li>
-					   <li class="options-item-checkbox">
+					</div>
+					<div class="options-item-checkbox">
 			 			<label for="infrastructure-field">Парковка</label>
 			 			<input type="checkbox" name="parking" id="infrastructure-field" checked>
-	  				</li>
-					  <li class="options-item-checkbox">
+					</div>
+					<div class="options-item-checkbox">
 	   	 	  			<label for="infrastructure-field">Wi-Fi</label>
 	  	 	  			<input type="checkbox" name="Wi-Fi" id="infrastructure-field">
-	  		   		</li>
-					</ul>
-					
-					<ul class="options-item-2">
-						<p class="options-place">Тип жилья:</p>
-						<li class="options-item-radio">
-					
-	 		   			<label for="staying-place-type"></label>
-	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="hotel" checked>Гостиница
-	   		   			<br>
-					</li>
-					<li class="options-item-radio">
-	   		   			<label for="staying-place-type"></label>
-	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="motel">Мотель
-	   		   			<br>
-					</li>
-					<li class="options-item-radio">
+					</div>
+				</div>
+			</div> 
+			<div class="options-staying-place">
+				<span class="filter-option">Тип жилья:</span>
+				<div class="options-item-radio">
+	 		   		<label for="staying-place-type"></label>
+	  		   		<input type="radio" name="staying-place-type" name="staying-place-type" value="hotel" checked>Гостиница
+				</div>
+				<div class="options-item-radio">
+	   		   		<label for="staying-place-type"></label>
+	  		   		<input type="radio" name="staying-place-type" name="staying-place-type" value="motel">Мотель
+				</div>
+				<div class="options-item-radio">
 	   		   			<label for="staying-place-type"></label>
 	  		   			<input type="radio" name="staying-place-type" name="staying-place-type" value="appartaments">Аппартаменты
-	   		  			
-					</li>
-					</ul>	 	
-	    		<p class="prices visually-hidden">Цены</p>
-				<ul class="options-item-field">
-	    				<li class="options-item-cost"><label for="price-range">Стоимость,р:</label></li>
-	    				<li class="options-item-cost">
-						<input type="text" name="from" size="10">
-	    				<input type="text" name="to" size="10"></li>
-						<li class="options-item-cost">
-	  				   0<input type="range" name="price-range" id="price-range" min="0" max="10000" step="1">9000
-					</li>
-					<li class="options-item-cost">
+				</div>
+			</div> 	
+	    	<p class="prices visually-hidden">Цены</p>
+	    	<div class="options-item-cost-range">
+					<label for="price-range">Стоимость,р:</label>
+					<input type="text" name="from" size="10">
+	    			<input type="text" name="to" size="10">
+	  				0<input type="range" name="price-range" id="price-range" min="0" max="10000" step="1">9000
+			</div>
+			<div class="options-item-buttons">
 	    				<button class="button button-apply" type="submit" href="#">Применить</button>
 	    				<button class="button button-reset" type="reset" href="#">Сбросить</button>
-					</li>
-				</ul>
-			</form>
+			</div>
+				
 		</div>
+		</form>
+		
 
-    <h2 class="visually-hidden">Список найденных гостиниц</h2>
-	<section class="staying-place-list">
-		<span class="places-found">Найдено гостиниц: 38</span>
+    	<h2 class="visually-hidden">Список найденных гостиниц</h2>
+		<section class="staying-place-list">
+			<span class="places-found">Найдено гостиниц: 38</span>
 	  	<ul class="places-list">
 			<li class="places-list-item">Amara Resort & Spa
 			<img 
