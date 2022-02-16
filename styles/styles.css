@@ -246,19 +246,16 @@ li {
   height: 417px; 
 }
 
-
 .options-action {
   display: flex;
   flex-wrap: wrap;
   background-image: url("../images/catalog-background-1.jpg");
   background-repeat: no-repeat;
   height: 408px;
-  
 }
 
 .hotels-filter {
   display: flex;
-  
 }
 
 .filter-option {
@@ -273,7 +270,7 @@ li {
   color: #ffffff;
   margin-left: 71px;
   margin-bottom: 83px;
-  width: 170px;
+  width: 180px;
   height: 115px;
 }
 
@@ -328,9 +325,49 @@ li {
   text-decoration: none;
 }
 
+.big-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 19px;
+  
+}
+
+.big-radio {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.checkbox-description {
+  font-size: 18px;
+}
+
 .button-apply {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
+  font-weight: 700;
   margin-bottom: 20px;
+  padding: 10px 30px;
+  border: solid;
+  border-radius: 4px;
+  line-height: 21px;
+  background-color: #83B3D3;
+  color: #ffffff;
+  font-size: 16px;
+  width: 160px;
+  height: 48px;
+}
+
+.button-reset {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background:none;
+    border: none;
+    width: 160px;
+    height: 23px;
+    color: #ffffff;
 }
 
 .sedona-hotels {
