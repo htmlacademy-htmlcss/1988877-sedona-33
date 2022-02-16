@@ -132,7 +132,6 @@ li {
   text-decoration: none;
 }
 
-
 .svg-sedona {
   display: flex;
   justify-content: center;
@@ -153,14 +152,12 @@ li {
   margin: 0;
   padding: 0;
   padding-bottom: 31px;
-  
 }
 
 .sedona-description-small {
   padding-bottom: 80px;
 }
  
-
 .why-sedona {
   font-size: 22px;
   line-height: 36px;
@@ -183,6 +180,7 @@ li {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   color: #000000;
   margin: 0;
   width: 400px;
@@ -381,10 +379,48 @@ li {
   display: block;
 } 
 
+.staying-place-list {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .places-list {
   background-color: #ffffff;
   color: #000000;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.places-list-item:nth-child(1) {
+
+}
+
+.places-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18px;
+  margin-top: 56px;
+}
+
+.places-found {
+  display: block;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  padding-left: 71px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+}
+
+.hotel-photo {
+  display: flex;
+  order: -1;
 }
 
 .subscribe-section {
