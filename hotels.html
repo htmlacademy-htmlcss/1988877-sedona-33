@@ -91,8 +91,8 @@
 	  				0<input type="range" name="price-range" id="price-range" min="0" max="10000" step="1">9000
 			</div>
 			<div class="options-item-buttons">
-	    				<button class="button button-apply" type="submit" href="#">Применить</button>
-	    				<button class="button button-reset" type="reset" href="#">Сбросить</button>
+	    			<button class="button-apply" type="submit" href="#">Применить</button>
+	    			<button class="button-reset" type="reset" href="#">Сбросить</button>
 			</div>
 				
 		</div>
@@ -113,9 +113,9 @@
 		 		<span class="small-text-hotel">Гостиница</span>
 		 		<span class="small-text-price">От 4000р</span>
 		 		<img class="stars" src="" alt="Количество звёзд">
-				 	<a class="expand-item-list" href="#">Подробнее</a>
+				<a class="expand-item-list" href="#">Подробнее</a>
 		 		<span class="rating">Рейтинг: 8,5</span>
-				<button class="in-favourites" href="#">В избранное</button>
+				<a class="in-favourites" href="#">В избранное</a>
 			</li>
 			
 			<li class="places-list-item">Desert Quail Inn
@@ -130,7 +130,7 @@
 				<img class="stars" src="" alt="Количество звёзд">
 				<a class="expand-item-list" href="#">Подробнее</a>
 		 		<span class="rating">Рейтинг: 8,9</span>
-		 		<button class="in-favourites" href="#">В избранное</button>
+		 		<a class="in-favourites" href="#">В избранное</a>
 			</li>
 		
 			<li class="places-list-item">Villas at Poco Diablo
@@ -145,7 +145,7 @@
 		 		<img class="stars" src="" alt="Количество звёзд">
 			 	<a class="expand-item-list" href="#">Подробнее</a>
 				<span class="rating">Рейтинг: 9,2</span>
-				<button class="in-favourites" href="#">В избранное</button>
+				<a class="in-favourites" href="#">В избранное</a>
 			</li>
 			
 			<li class="places-list-item">GreenTree Inn
@@ -159,39 +159,44 @@
 		 		<img class="stars" src="" alt="Количество звёзд">
 		 		<a class="expand-item-list" href="#">Подробнее</a>
 		 		<span class="rating">Рейтинг: 9,2</span>
-		 		<button class="in-favourites" href="#">В избранное</button>
+		 		<a class="in-favourites" href="#">В избранное</a>
 			</li>
-	    </ul>
-
-		<button class="button button-interested" href="#">ЗАГРУЗИТЬ ЕЩЕ</button>
-		<p>Гостиниц на странице:</p>
+	    	</ul>
+			<a class="hotels-load-more" href="#">ЗАГРУЗИТЬ ЕЩЕ</a>
+		</section>
+		<div class="options-variables">
+		<p class="hotels-on-page">Гостиниц на странице:</p>
 		<select class="options-list" name="options-list">
-		<option class="options-list item">1</option>
+		<option>1</option>
 		<option>2</option>
 		<option>3</option>
 		<option selected>4</option>
 		</select>
-
+		</div>
+		
+		
+	<div class="pagination">
 	   <ul class="list-number">
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">1</a>
 		</li>
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">2</a>
 		</li>	
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">3</a>
 		</li>	
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">4</a>
 		</li>		
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">...</a>
 		</li>	
 		<li class="list-item">
-			<button class="button-list-item" href="#"></button>
+			<a class="button-list-item" href="#">10</a>
 		</li>				
 	   </ul>
+	</div>
 
 	   <section class="subscribe-section">
 		<h2 class="subscribe">Подпишитесь на рассылку</h2>
@@ -209,13 +214,14 @@
          <a class="visualy-hidden" href="https://twitter.com" target="_blank" alt="Твиттер">Twitter</a>
        </li>
        <li class="footer-socials footer-socials-facebook">
-     <a class="visualy-hidden" href="https://facebook.com" target="_blank" alt="Фейсбук">Facebook</a>
+     	 <a class="visualy-hidden" href="https://facebook.com" target="_blank" alt="Фейсбук">Facebook</a>
        </li>
        <li class="footer-socials footer-socials-youtube">
-     <a class="visualy-hidden" href="https://youtube.com" target="_blank" alt="Ютюб">Youtube</a>
+     	 <a class="visualy-hidden" href="https://youtube.com" target="_blank" alt="Ютюб">Youtube</a>
        </li>
     </ul>
-    <div class="company-tel"><a href="tel:+78128121212">+7(812)812-12-12</a>
+    <div class="company-tel">
+		<a href="tel:+78128121212">+7(812)812-12-12</a>
     </div>
     <div class="html-academy">
 		<a class="html-academy-logo" href="https://htmlacademy.ru" target="_blank">
