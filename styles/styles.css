@@ -16,8 +16,7 @@
 
 .body-container {
   width: 1200px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 35px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -45,7 +44,6 @@ html {
     line-height: 28px;
     background:#E5E5E5;
     color: #FFFFFF;
-    margin-right: 70px;
 }
 
 .hotels-page {
