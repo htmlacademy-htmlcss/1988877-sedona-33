@@ -16,7 +16,8 @@
 
 .body-container {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: 70px;
+  margin-right: 70px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -44,7 +45,7 @@ html {
     line-height: 28px;
     background:#E5E5E5;
     color: #FFFFFF;
-    margin: 0;
+    margin-right: 70px;
 }
 
 .hotels-page {
@@ -228,7 +229,6 @@ li {
   color: #ffffff;
 }
 
-
 .hotels-load-more {
   display: flex;
   justify-content: center;
@@ -260,6 +260,22 @@ li {
   font-weight: 700;
 }
 
+.navigation-user-link-want {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 133px;
+  height: 37px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  
+}
+
 .in-favourites {
   display: flex;
   justify-content: center;
@@ -283,7 +299,6 @@ li {
 
 .hotels-on-page {
   color: #000000;
-  
 }
 
 .list-item {
@@ -337,7 +352,6 @@ li {
   display: flex;
   padding: 0;
   margin: 0;
-
 }
 
 .options-checkboxes {
@@ -366,7 +380,6 @@ li {
   padding-bottom: 13px;
   font-size: 18px;
 }
-
 
 .options-item-radio {
   padding-bottom: 13px;
@@ -490,7 +503,6 @@ li {
   flex-wrap: wrap;
   padding-top: 65px;
   margin-left: 81px;
-
 }
 
 .button-apply {
@@ -523,7 +535,6 @@ variables-and-pagination {
   height: 55px;
   width: 1200px;
   background-color: #ffffff;
-  
 }
 
 .options-variables {
