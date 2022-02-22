@@ -39,6 +39,7 @@ html {
 .hotels-body {
     min-height: 100%;
     font-family: "PT Sans";
+    width: 1200px;
     font-size: 24px;
     line-height: 28px;
     background:#E5E5E5;
@@ -272,31 +273,21 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
+  margin-left: 26px;
+}
+
+.favourites-and-expand {
+  display: flex;
+  margin-top: 16px;
 }
 
 .hotels-on-page {
-  display: flex;
   color: #000000;
-  justify-content: flex-end;
-  margin-right: 283px;
-}
-
-.pagination {
-  display: flex;
-  align-items: flex-start;
-}
-
-.list-number {
-  display: flex;
-  list-style: none;
+  
 }
 
 .list-item {
   padding-right: 8px;
-}
-
-list-item:nth-child(1) {
-  background-color: #000000;
 }
 
 .button-list-item {
@@ -337,10 +328,22 @@ list-item:nth-child(1) {
   background-image: url("../images/catalog-background-1.jpg");
   background-repeat: no-repeat;
   height: 408px;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-filter {
   display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.options-checkboxes {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .filter-option {
@@ -361,16 +364,69 @@ list-item:nth-child(1) {
 
 .options-item-checkbox {
   padding-bottom: 13px;
+  font-size: 18px;
 }
+
 
 .options-item-radio {
   padding-bottom: 13px;
+  font-size: 18px;
 }
 
 .options-item-cost-range {
   display: flex;
   flex-direction: column;
-  margin-left: 216px;
+  margin: 0;
+  padding: 0;
+  padding-left: 120px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.options-cost-input {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 34px;
+  background: none;
+}
+
+.prices-from {
+  background: none;
+  border: 2px solid #FFFFFF;
+  text-align: end;
+  border-collapse: collapse;
+  height: 48px;
+}
+
+.prices-to {
+  background: none;
+  text-align: end;
+  border: 2px solid #FFFFFF;
+  border-left: none;
+  border-collapse: collapse;
+  height: 48px;
+}
+
+.prices-from,
+.prices-to {
+  margin-bottom: 20px;
+  line-height: 21px;
+  border-collapse: collapse;
+}
+
+.price-range {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.price-range-line {
+  width: 287px;
+}
+
+.prices {
+  margin: 0;
+  padding: 0;
 }
 
 .options-item-buttons {
@@ -382,8 +438,6 @@ list-item:nth-child(1) {
 }
 
 .options-list {
-  display: flex;
-  justify-content: center;
   width: 160px;
   height: 48px;
 }
@@ -430,14 +484,22 @@ list-item:nth-child(1) {
   font-size: 18px;
 }
 
-.button-apply {
+.apply-reset-buttons {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 65px;
+  margin-left: 81px;
+
+}
+
+.button-apply {
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
   padding: 10px 30px;
-  border-radius: 5px;
+  border-radius: 4px;
   line-height: 21px;
   background-color: #83B3D3;
   color: #ffffff;
@@ -447,7 +509,6 @@ list-item:nth-child(1) {
 }
 
 .button-reset {
-  display: flex;
   justify-content: center;
   font-size: 16px;
   background:none;
@@ -455,6 +516,28 @@ list-item:nth-child(1) {
   width: 160px;
   height: 23px;
   color: #ffffff;
+}
+
+variables-and-pagination {
+  display: flex;
+  height: 55px;
+  width: 1200px;
+  
+}
+
+.options-variables {
+  display: flex;
+  width: 420px;
+}
+
+.pagination {
+  display: flex;
+  width: 420px;
+}
+
+.list-number {
+  display: flex;
+  list-style: none;
 }
 
 .sedona-hotels {
@@ -472,6 +555,8 @@ list-item:nth-child(1) {
 .staying-place-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .places-list {
@@ -502,11 +587,53 @@ list-item:nth-child(1) {
   background-color: #ffffff;
   color: #000000;
   font-weight: 700;
+  text-align: left  ;
 }
 
 .hotel-photo {
   display: flex;
   order: -1;
+}
+
+.small-hotel {
+  display: flex;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.small-text-price {
+  margin-left: 25px;
+}
+
+.small-text-hotel {
+  width: 133px;
+  height: 23px;
+}
+
+.hotel-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stars-and-rating {
+  display: flex;
+}
+
+.stars {
+  width: 131px;
+}
+
+.rating {
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-right: 34px;
+  padding-left: 34px;
+  margin-top: 16px;
+  text-align: center;
 }
 
 .subscribe-section {
